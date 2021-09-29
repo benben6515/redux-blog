@@ -1,5 +1,7 @@
 ### 這一個 React / Redux 做的部落格
 
+可以查看文章，註冊後可以發佈文章。
+
 [demo](https://benben6515.github.io/redux-blog)
 
 ### 功能
