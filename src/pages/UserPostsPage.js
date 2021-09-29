@@ -57,7 +57,10 @@ const UserPostsPage = () => {
   const userPosts = useSelector(selectUserPosts)
   const isLoading = useSelector(selectIsLoading)
   let { userId } = useParams()
-  const isSameId = Number(userId) === user.id
+  let isSameId = false
+  if (user) {
+    isSameId = Number(userId) === user.id
+  }
 
   useEffect(() => {
     (async () => {
